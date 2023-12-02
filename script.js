@@ -17,7 +17,7 @@ function Myfunction(){
    var link = document.getElementById('link');
   
     if(code1 === '123456789'){
-        link.href = 'file:///Users/kelly/Desktop/Year%209/Web-Fuchsia/WIT/student_home.html';
+        link.href = 'https://thuhnineain.github.io/wit/student_home.html';
         return false;
     } 
 }
