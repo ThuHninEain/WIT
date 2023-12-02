@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WIT</title>
+    <!--CSS and Java-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="image/Wit icon.png">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width:992px){
+            .tick-card{
+                margin-bottom: 20px;
+            }
+            .scroll-nav li{
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .scroll-nav li a span{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .features-tab{
+                margin-right: 10px;
+                margin-left: 10px;
+
+            }
+            .header-intro{
+                font-size: 30px;
+            }
+            .intro-text{
+                text-align: left;
+                padding: 30px;
+            }
+            .intro-text p{
+                font-size: 16px;
+            }
+            .b-hover{
+                width: 50%;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            .register-btn{
+                display: flex;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .img-two{
+                width: 30%;
+            }
+            .img-three{
+                width: 0px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #fcfcfb; color: #39332c;">
+
+<!--NavBar-->
+<div class="container border-bottoms">
+    <div class="navbar navbar-expand-md nav-style">
+        <a href="index.html"><img src="image/Wit icon.png" width="55px" alt=""></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse navi" id="mymenu">
+            <ul class="navbar-nav col-10 justify-content-center mid-nav">
+                <li class="nav-item mx-2"><a class="nav-link" href="index.html" style="color: #6652D9;">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+            </ul>
+
+            <ul class="navbar-nav col-2 logsign">
+                <li class="nav-item"><a class="nav-link" href="student_signup.html">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="student_login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!--Contents-->
+    <div class="container-fluid py-5 mb-4 border-bottoms">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-md-4" style="align-self: center;">
+                        <img src="image/Transhumans - Experiments.png" alt="Classroom" width="100%" class="img-two">
+                    </div>
+        
+                    <div class="col-md-8 intro-text" style="align-self: center; ">
+                        <span class="header-intro">Welcome to our comprehensive classroom management platform, designed to empower educators and students alike in creating an optimal learning environment.</span> 
+                        <p class="mt-2" style="color: #8d887b;">Within our virtual space, you will discover a multitude of features and tools geared toward effective classroom organisation and coordination.</p> 
+                        <div class="col-lg-12 register-btn">
+                            <a href="tr_signup.html"><button class="btn text-light b-hover" style="background-color: #6652D9;">Register as a teacher</button></a>
+                            <a href="student_signup.html"><button class="btn text-light b-hover" style="background-color: #f0cd56;">Register as a Student</button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Scrollspy-->
+<nav class="navbar justify-content-center" id="nav-item" style="position: sticky; top: 0; z-index: 100;">
+    <ul class="nav p-3 scroll-nav">
+
+        <li class="nav-item">
+            <a href="#features" class="text-decoration-none">
+                <span style="color: #6d4ed2; border: #6d4ed2 2px solid; border-radius: 5px; text-align: center; background-color: #c3b2f8">Features</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#wittiness" class="text-decoration-none">
+                <span style="color: #f5c057; border: #f5c057 2px solid; border-radius: 5px; text-align: center; background-color: #fbf4d9;">Wittiness</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#tools" class="text-decoration-none">
+                <span style="color: #afc84a; border: #bed855 2px solid; border-radius: 5px; text-align: center; background-color: #f2f6db">Tools for You</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid scrollspy-example" data-bs-spy="scroll" data-bs-target="#nav-item" data-bs-smooth-scroll="true">
+    <!--Features-->
+    <div class="container mt-3 " id="features" style="background-color: #f7f6f2; border-radius: 20px; border: #8d887b5f solid 2px;box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;" data-aos="fade-up">
+        <div class="text-center title">
+            <i class="bi bi-plus-circle" style="color: #6d4ed2;"></i>
+            <h2 style="color: #6d4ed2;" class="display-5 fw-bold">Features</h2>
+        </div>
+        <div>
+            <ul class="nav nav-pills justify-content-center pb-3 border-bottoms">
+                <li class="nav-item">
+                    <a class="nav-link active features-tab" data-bs-toggle="tab" href="#features1">WIT's Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link features-tab" data-bs-toggle="tab" href="#quality">Quality of Life Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link features-tab" data-bs-toggle="tab" href="#personal">Personalised Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link features-tab" data-bs-toggle="tab" href="#security">Security Features</a>
+                </li>
+            </ul>
+    
+            <div class="tab-content">
+                <div class="tab-pane active" id="features1">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row ">
+                                <div class="col-md-6" style="align-self: center;">
+                                    <ul>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Teachers can smoothly assign coursework, and craft quizzes.</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Seamless submissions.</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Easy assignment uploads.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="image/Dayflow - Teamwork.png" alt="" width="250px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+    
+                <div class="tab-pane" id="quality">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6" style="align-self: center;">
+                                    <ul>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Manage multiple classes at once</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Simple and secure way to access classroom via class ID</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Tools are available for the respective users</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="image/Dayflow - Chill.png" alt="" width="250px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="tab-pane" id="personal">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6" style="align-self: center;">
+                                    <ul>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Teachers and students can communicate via announcement</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Set up personalised classroom's to organise workload</li>
+                                    </ul>
+                                </div>
+        
+                                <div class="col-md-6  text-center">
+                                    <img src="image/Dayflow - Buy Online.png" alt="" width="250px" class="mt-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="security">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6" style="align-self: center;">
+                                    <ul>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>No advertisements in classrooms</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>Personal log in informations will be private</li>
+                                        <li class="features-list"><i class="bi bi-check-lg me-2"></i>The only way to get into a classroom is from classroom ID which only teachers can give out</li>
+                                    </ul>
+                                </div>
+        
+                                <div class="col-md-6 text-center">
+                                    <img src="image/Dayflow - Torso.png" alt="" width="250px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+    </div>
+    <div class="diagonal-section">
+        <div class="diagonal-section__diagonal"></div>
+        &nbsp; <br><br>
+    </div>
+<!--Wittiness-->
+    <div class="container-fluid" id="wittiness">
+        <div class="text-center title">
+            <i class="bi bi-sunglasses" style="color: #538aa6;"></i>
+            <h2 style="color: #f5c057;" class="display-5 fw-bold">Wittiness</h2>
+            <p class="mt-2" style="font-size: 18px; color: #39332c;">Frequent questions users and new comers might wonder about our websites.</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <img src="image/Brazuca - Browsing.png" width="400px" alt="" class="img-three" data-aos="zoom-in-up" data-aos-duration="1000">
+            </div>
+            <div class="col-md-6" style="align-self: center;">
+                <div class="accordion" id="parent">
+                    <div class="card" style="border: solid 2px #f0cd56;">
+                        <div class="card-body">
+
+                             <div class="accordion-item custom-accordion-item">
+                                <h2 class="accordion-header custom-accordion-header">
+                                    <button class="accordion-button collapsed " style="background-color: white; color: #5e52b6;" type="button" data-bs-toggle="collapse" data-bs-target="#use">
+                                        Why you should use WIT?
+                                    </button>
+                                </h2>
+            
+                                <div id="use" class="accordion-collapse collapse show" data-bs-parent="#parent">
+                                    <div class="accordion-body custom-accordion-body">
+                                        WIT is designed for educators and learners to facilitate their educational journey with various useful tools and unique features. It simplifies classroom management for teachers, making it more convenient and efficient. Students can use special tools for studying and reinforce their understanding by taking quizzes created by their teachers.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item custom-accordion-item">
+                                <h2 class="accordion-header custom-accordion-header">
+                                    <button class="accordion-button collapsed" style="background-color: white; color: #5e52b6;" type="button" data-bs-toggle="collapse" data-bs-target="#different">
+                                        What makes WIT different from others?
+                                    </button>
+                                </h2>
+            
+                                <div id="different" class="accordion-collapse collapse" data-bs-parent="#parent">
+                                    <div class="accordion-body custom-accordion-body">
+                                        Our website is your all-in-one learning hub, combining your favourite online resources. Whether you're a teacher or a student, we offer valuable tools and content to enhance your educational experience. Explore our platform for a more convenient and enriching learning journey.                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="accordion-item custom-accordion-item">
+                                <h2 class="accordion-header custom-accordion-header">
+                                    <button class="accordion-button collapsed" style="background-color: white; color: #5e52b6;" type="button" data-bs-toggle="collapse" data-bs-target="#for">
+                                        Who is WIT for?
+                                    </button>
+                                </h2>
+            
+                                <div id="for" class="accordion-collapse collapse" data-bs-parent="#parent">
+                                    <div class="accordion-body custom-accordion-body">
+                                        WIT is the ideal choice for individuals seeking an all-in-one learning platform, complete with a diverse set of valuable tools and distinctive features.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item custom-accordion-item">
+                                <h2 class="accordion-header custom-accordion-header">
+                                    <button class="accordion-button collapsed" type="button" style="background-color: white; color: #5e52b6;" data-bs-toggle="collapse" data-bs-target="#fabicon">
+                                        Why is WIT's logo an astronaut?
+                                    </button>
+                                </h2>
+            
+                                <div id="fabicon" class="accordion-collapse collapse" data-bs-parent="#parent">
+                                    <div class="accordion-body custom-accordion-body">
+                                        Our logo represents a child astronaut because we intend it to symbolise a child's view towards the world and the possibilities they see in the world, which in this case is the universe. As much as the sparkling stars shine towards our child astronaut, children all around the world are intrigued by all the possibilities surrounding them. So instead of cancelling their inner sparks, we'd like to envelope it and give them the love for achieving their goals through our study website.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer text-center" style="background-color: #f0cd56; color: white;">
+                            Have more questions? <a href="contactus.html" style="color: #6652D9;">Contact us</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!--Tools-->
+    <div class="container-fluid mt-3 pb-3 tool-bg curved-background curved-background__curved" id="tools">
+        <div class="text-center title">
+            <i class="bi bi-tools" style="color: #f7f6f2;"></i>            
+            <h2 style="color: #bed855;" class="display-5 fw-bold">Tools for you</h2>
+            <p class="mt-2" style="font-size: 18px; color: #ffffffe5;">WIT has essential Tools for Success in Teaching and Learning.</p>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card tick-card p-4 mx-3" style="background-color: #bed855; color: #39440f;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-5">Teachers'</h3>
+                            <p class="text-center" style="color: #47531ac1;">For educators, our platform offers an array of essential features. With it, teachers can smoothly assign coursework, and craft quizzes to gauge students' comprehension of the material covered in previous lessons. Dedicated to the needs of educators, our platform offers a specialised tool that streamlines the grading process, making it more efficient and user-friendly.</p>
+                        
+                            <div class="d-flex tool-list1">
+                                <span href="#" class="card-link">Grading</span><i class="bi bi-check-circle-fill ms-auto"></i>
+                            </div>
+                            <div class="d-flex tool-list1">
+                                <span href="#" class="card-link">Timer</span><i class="bi bi-check-circle-fill ms-auto"></i>
+                            </div>
+                            <div class="d-flex tool-list1">
+                                <span href="#" class="card-link">Calendar</span><i class="bi bi-check-circle-fill ms-auto"></i>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="tr_signup.html"><button class="btn" style="color: #fff;">Register as a teacher</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="card tick-card p-4 shadow mx-3" style="background-color: #f7f6f2; color: #39332c;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-5">Students'</h3>
+                            <p class="text-center" style="color: #8d887b;">For students, our platform presents a set of user-friendly features such as being able to upload assignments easily, and taking quizzes that have been thoughtfully prepared by your teachers, within a conventional interface. As for the tools, we've got a mighty lineup. These include a handy timer to keep track of your study sessions, a calendar for marking vital events, and a to-do list to keep you organised and on track.</p>
+                            <div class="d-flex tool-list2">
+                                <span href="#" class="card-link">Timer</span><i class="bi bi-check-circle-fill ms-auto"></i>
+                            </div>
+                            <div class="d-flex tool-list2">
+                                <span href="#" class="card-link">Calendar</span><i class="bi bi-check-circle-fill ms-auto"></i>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="student_signup.html"><button class="btn" style="color: #71c5d5;">Register as a Student</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        
+    </div>
+
+</div>
+
+<!--About-->
+<div class="container my-5">
+    <div class="row justify-content-center">
+
+        <div class="card col-lg-10 blue-box">
+            <div class="position-absolute end-0 bottom-0">
+                <img src="image/Family Values - Outdoors 1.png" alt="" height="200px">
+            </div>
+            <div class="position-relative">
+                <h2 class="text-light">Learn about our developers</h2>
+                <button class="btn mt-5 b-hover" style="background-color: #f5c057; width: 200px;"><a href="aboutus.html" class="text-light fw-bold">Learn</a></button>
+            
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Footer-->
+<div class="container-fluid" style="border-top: #f0cd56 solid 2px; background-color: #f7f6f2;">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 text-center">
+                    <img src="image/Wit icon.png" alt="" width="15%" class="me-3">
+                    <span style="color: #8d887b;">©Copyright All Rights Reserved</span>
+                </div>
+                <div class="col-lg-4 text-center" style="align-self: center;">
+                    <a href="https://www.facebook.com"><i class="bi bi-facebook footer-icon"></i></a>
+                    <a href="https://www.twitter.com"><i class="bi bi-twitter footer-icon"></i></a>
+                    <a href="https://www.youtube.com"><i class="bi bi-youtube footer-icon"></i></a>
+                </div>
+                <div class="col-lg-4 navbar-expand text-center justify-content-center" style="align-self: center;">
+                    <ul class="navbar nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html" style="color: #6652D9;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
